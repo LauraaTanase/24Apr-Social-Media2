@@ -1,10 +1,11 @@
 /*General*/
 body {
   background-color: black;
-  color: #fafafa;
+  color: #f4f2fe;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
-  margin:0;
+  margin: 0;
+  width: 0 auto;
 }
 
 .container {
@@ -14,39 +15,38 @@ body {
 }
 /*Helpers*/
 .display-flex {
-    display: flex;
-  }
+  display: flex;
+}
 
 /*Sidemenu*/
 .sidemenu {
   flex: 1;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-.user-profile{
-    gap:10px;
-margin-top: auto;
+.user-profile {
+  gap: 10px;
+  margin-top: auto;
 }
 
-.avatar{
-    background-color: #bada55;
-    border-radius:100%;
-    align-items: center;
-    display: flex;
-    padding:10px;
+.avatar {
+  background-color: #bada55;
+  border-radius: 100%;
+  align-items: center;
+  display: flex;
+  padding: 10px;
 }
 
-.name{
-    margin:0;
-
+.name {
+  margin: 0;
 }
-.username{
-    color:#bada55;
-    font-weight: 500;;
-    font-size: 14px;
-    letter-spacing: 1.5px;;
-    margin:auto 0;
+.username {
+  color: #bada55;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin: auto 0;
 }
 
 /*Feed*/
@@ -54,16 +54,35 @@ margin-top: auto;
   flex: 2;
   overflow-y: auto;
 
-  display:flex;
+  display: flex;
   flex-direction: column;
-  gap:20px;
-  padding:0 20px;
-
+  gap: 20px;
+  padding: 0 20px;
 }
 
-.post{
-    border-bottom: 1px solid #eaeaea;
-    padding-bottom: 20px;
+.post {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+}
+
+.announcement {
+  width: 400px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  height:60px;
+
+}
+.ul-list{
+ text-decoration: none;
+  display: inline-block;
+  flex-direction: row;
 }
 
 /*Topics*/
@@ -72,26 +91,12 @@ margin-top: auto;
   padding-top: 25px;
 }
 
-.description{
-    padding-left:50px;
+.description {
+  padding-left: 50px;
 }
 
-.card{
-    border:1px solid #eaeaea;
-    border-radius: 10px;
-    padding:10px;
-}
-
-
-/*Media Query*/
-@media screen and (max-width: 800px){
-
-
-.sidemenu{
-  display:none;
-}
-
-.topics{
-  display:none;
-}
+.card {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 10px;
 }
